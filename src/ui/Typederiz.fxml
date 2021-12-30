@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="398.0" prefWidth="590.0" style="-fx-background-color: #F0F8FF;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Typederiz">
+   <children>
+      <Pane prefHeight="150.0" prefWidth="590.0" style="-fx-background-color: #FAEBD7;">
+         <children>
+            <ImageView fitHeight="113.0" fitWidth="129.0" layoutX="25.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/basmati-modified.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="113.0" fitWidth="124.0" layoutX="239.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/complet-modified.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="113.0" fitWidth="113.0" layoutX="450.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/normal-modified.png" />
+               </image>
+            </ImageView>
+            <Button layoutX="82.0" layoutY="104.0" mnemonicParsing="false" onAction="#GoToMode" style="-fx-background-color: #228B22;" text="Basmati" textFill="CORNSILK">
+               <font>
+                  <Font name="Agency FB Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button layoutX="507.0" layoutY="104.0" mnemonicParsing="false" onAction="#GoToMode" style="-fx-background-color: #228B22;" text="Normal" textFill="CORNSILK">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button layoutX="295.0" layoutY="104.0" mnemonicParsing="false" onAction="#GoToMode" style="-fx-background-color: #228B22;" text="Complet" textFill="CORNSILK">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+      <ImageView fitHeight="29.0" fitWidth="65.0" layoutX="269.0" layoutY="344.0" opacity="0.7" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/road.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="275.0" layoutY="373.0" prefHeight="22.0" prefWidth="54.0" text="ROADRUNNER" textAlignment="CENTER" textFill="#90b2b5">
+         <font>
+            <Font name="Agency FB" size="12.0" />
+         </font>
+         <effect>
+            <Lighting diffuseConstant="1.29" specularConstant="1.42" specularExponent="17.52" surfaceScale="3.05">
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+
+            </Lighting>
+         </effect>
+      </Label>
+      <Pane layoutY="175.0" prefHeight="156.0" prefWidth="590.0" style="-fx-background-color: #FAEBD7;">
+         <children>
+            <ImageView fitHeight="113.0" fitWidth="125.0" layoutX="21.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/rond-modified.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="113.0" fitWidth="113.0" layoutX="239.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/sauvage-modified.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="113.0" fitWidth="113.0" layoutX="456.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/thai-modified.png" />
+               </image>
+            </ImageView>
+            <Button layoutX="78.0" layoutY="109.0" mnemonicParsing="false" onAction="#GoToMode" style="-fx-background-color: #228B22;" text="Rond" textFill="CORNSILK">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button layoutX="295.0" layoutY="108.0" mnemonicParsing="false" onAction="#GoToMode" style="-fx-background-color: #228B22;" text="Sauvage" textFill="CORNSILK">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button layoutX="513.0" layoutY="108.0" mnemonicParsing="false" onAction="#GoToMode" style="-fx-background-color: #228B22;" text="Thai  " textFill="CORNSILK">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

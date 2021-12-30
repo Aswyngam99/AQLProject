@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="398.0" prefWidth="590.0" style="-fx-background-color: #F0F8FF;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Modecuisson">
+   <children>
+      <Pane prefHeight="107.0" prefWidth="595.0" style="-fx-background-color: #FAEBD7;">
+         <children>
+            <Label layoutX="92.0" layoutY="32.0" text="Mode de cuisson">
+               <font>
+                  <Font name="Agency FB" size="36.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="81.0" fitWidth="67.0" layoutX="14.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/kisspng-computer-icons-egg-timer-alarm-clocks-timer-5ace905fd89880.9350393115234868158872.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <ImageView fitHeight="29.0" fitWidth="67.0" layoutX="272.0" layoutY="355.0" opacity="0.7" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/road.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="278.0" layoutY="383.0" prefHeight="22.0" prefWidth="54.0" text="ROADRUNNER" textAlignment="CENTER" textFill="#90b2b5">
+         <font>
+            <Font name="Agency FB" size="12.0" />
+         </font>
+         <effect>
+            <Lighting diffuseConstant="1.29" specularConstant="1.42" specularExponent="17.52" surfaceScale="3.05">
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+
+            </Lighting>
+         </effect>
+      </Label>
+      <Button layoutX="112.0" layoutY="169.0" mnemonicParsing="false" onAction="#GoToOp" opacity="0.69" prefHeight="34.0" prefWidth="360.0" style="-fx-background-color: #B22222;" text="Lent" textFill="CORNSILK">
+         <font>
+            <Font name="Agency FB Bold" size="18.0" />
+         </font>
+         <effect>
+            <Glow level="1.0" />
+         </effect>
+      </Button>
+      <Button layoutX="112.0" layoutY="219.0" mnemonicParsing="false" onAction="#GoToOp" opacity="0.81" prefHeight="34.0" prefWidth="360.0" style="-fx-background-color: #FFA500;" text="Normal" textFill="#1b180d">
+         <font>
+            <Font name="Agency FB Bold" size="18.0" />
+         </font>
+         <effect>
+            <Glow level="1.0" />
+         </effect>
+      </Button>
+      <Button layoutX="112.0" layoutY="267.0" mnemonicParsing="false" onAction="#GoToOp" prefHeight="34.0" prefWidth="360.0" style="-fx-background-color: #228B22;" text="Rapide" textFill="CORNSILK">
+         <font>
+            <Font name="Agency FB Bold" size="18.0" />
+         </font>
+         <effect>
+            <Glow level="1.0" />
+         </effect>
+      </Button>
+   </children>
+</AnchorPane>

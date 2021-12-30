@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="398.0" prefWidth="590.0" style="-fx-background-color: #F0F8FF;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Operation">
+   <children>
+      <Pane prefHeight="104.0" prefWidth="590.0" style="-fx-background-color: #FAEBD7;">
+         <children>
+            <Label layoutX="62.0" layoutY="25.0" opacity="0.81" text="ETAT">
+               <font>
+                  <Font size="36.0" />
+               </font>
+               <effect>
+                  <Glow level="1.0" />
+               </effect>
+            </Label>
+            <Label layoutX="449.0" layoutY="26.0" opacity="0.81" text="EAU">
+               <font>
+                  <Font size="36.0" />
+               </font>
+               <effect>
+                  <Glow level="1.0" />
+               </effect>
+            </Label>
+            <ImageView fitHeight="70.0" fitWidth="87.0" layoutX="385.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/kisspng-leaf-water-logo-drop-water-droplets-green-leaf-5a82c58fb6d764.7547311315185196957489.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="51.0" fitWidth="42.0" layoutX="14.0" layoutY="31.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/5a29ac13a9eb03.908274031512680467696.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="29.0" fitWidth="26.0" layoutX="535.0" layoutY="39.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/kisspng-computer-icons-download-font-awesome-share-icon-correct-sign-5b2dcc875e3976.061043021529728135386.png" />
+               </image>
+               <effect>
+                  <Lighting diffuseConstant="0.04" specularConstant="2.0" specularExponent="0.0">
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant>
+                           <color>
+                              <Color green="1.0" blue="0.2666666805744171" />
+                           </color>
+                        </Light.Distant>
+                     </light>
+                  </Lighting>
+               </effect>
+            </ImageView>
+         </children>
+      </Pane>
+      <Label layoutX="61.0" layoutY="112.0" text="Conservation">
+         <font>
+            <Font name="Agency FB" size="18.0" />
+         </font>
+      </Label>
+      <Button layoutX="42.0" layoutY="153.0" mnemonicParsing="false" style="-fx-background-color: #228B22;" text="Durée : 4H " textFill="CORNSILK">
+         <effect>
+            <Glow level="1.0" />
+         </effect>
+         <font>
+            <Font name="Agency FB Bold" size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="42.0" layoutY="204.0" mnemonicParsing="false" style="-fx-background-color: #228B22;" text="Durée : 8H " textFill="CORNSILK">
+         <effect>
+            <Glow level="1.0" />
+         </effect>
+         <font>
+            <Font name="Agency FB Bold" size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="37.0" layoutY="258.0" mnemonicParsing="false" style="-fx-background-color: #228B22;" text="Durée : 12H " textFill="CORNSILK">
+         <effect>
+            <Glow level="1.0" />
+         </effect>
+         <font>
+            <Font name="Agency FB Bold" size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="469.0" layoutY="123.0" mnemonicParsing="false" onAction="#Start" style="-fx-background-color: #228B22;" text="START" textFill="CORNSILK">
+         <effect>
+            <Glow level="1.0" />
+         </effect>
+         <font>
+            <Font name="Agency FB Bold" size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="469.0" layoutY="172.0" mnemonicParsing="false" onAction="#Button" prefHeight="39.0" prefWidth="75.0" style="-fx-background-color: red;" text="STOP" textFill="CORNSILK">
+         <effect>
+            <Glow level="1.0" />
+         </effect>
+         <font>
+            <Font name="Agency FB Bold" size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="469.0" layoutY="216.0" mnemonicParsing="false" style="-fx-background-color: red;" text="PAUSE" textFill="CORNSILK">
+         <effect>
+            <Glow level="1.0" />
+         </effect>
+         <font>
+            <Font name="Agency FB Bold" size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="451.0" layoutY="263.0" mnemonicParsing="false" style="-fx-background-color: #228B22;" text="CONTINUE" textFill="CORNSILK">
+         <effect>
+            <Glow level="1.0" />
+         </effect>
+         <font>
+            <Font name="Agency FB Bold" size="18.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="22.0" fitWidth="66.0" layoutX="279.0" layoutY="361.0" opacity="0.7" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/road.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="278.0" layoutY="383.0" prefHeight="22.0" prefWidth="54.0" text="ROADRUNNER" textAlignment="CENTER" textFill="#90b2b5">
+         <font>
+            <Font name="Agency FB" size="12.0" />
+         </font>
+         <effect>
+            <Lighting diffuseConstant="1.29" specularConstant="1.42" specularExponent="17.52" surfaceScale="3.05">
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+            </Lighting>
+         </effect>
+      </Label>
+      <ImageView fitHeight="88.0" fitWidth="112.0" layoutX="415.0" layoutY="297.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/kisspng-plus-and-minus-signs-computer-icons-plus-minus-sig-positive-vector-5adf8916e6f890.7023559515245990629461.png" />
+         </image>
+         <effect>
+            <Glow level="1.0" />
+         </effect>
+      </ImageView>
+      <ImageView fitHeight="76.0" fitWidth="81.0" layoutX="106.0" layoutY="303.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/kisspng-computer-icons-plus-and-minus-signs-symbol-minus-5ae773ad0ad4d9.1645593015251178690444.png" />
+         </image>
+         <effect>
+            <Glow level="1.0" />
+         </effect>
+      </ImageView>
+      <GridPane layoutX="165.0" layoutY="122.0" prefHeight="182.0" prefWidth="282.0" style="-fx-background-color: black;">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="46.666656494140625" minHeight="10.0" prefHeight="24.666656494140625" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="46.666656494140625" minHeight="10.0" prefHeight="24.666656494140625" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="46.666656494140625" minHeight="10.0" prefHeight="24.666656494140625" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Heures" GridPane.halignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Secondes" GridPane.columnIndex="2" GridPane.halignment="CENTER" />
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Minutes" GridPane.columnIndex="1" GridPane.halignment="CENTER" />
+            <Text fx:id="HoursInput" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="00" GridPane.halignment="CENTER" GridPane.rowIndex="2">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Text>
+            <Text fx:id="MinutesInput" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="00" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Text>
+            <Text fx:id="SecondsInput" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="00" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="2">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Text>
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>
